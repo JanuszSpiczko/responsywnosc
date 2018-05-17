@@ -5,6 +5,7 @@ body {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
 }
 
 .topbar {
@@ -23,6 +24,16 @@ body {
 .square {
   display: flex;
   justify-content: space-around;
+  height: 700px;
+}
+
+@media (max-width: 700px) {
+  .square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .tile1 {
